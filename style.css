@@ -1,0 +1,244 @@
+/* définition des valeurs par defaut  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Le style global du cv */
+.container {
+    position: relative;
+    width: 60%;
+    /* max-width: 1000px; */
+    min-height: 800px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0, 1);
+}
+
+/* Le style gauche du cv */
+.container .left_Side {
+    position: relative;
+    background: #003147;
+    padding: 5%;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img {
+    position: top;
+    width: 100%;
+    height: 0 10px 0 0;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.contactInfo {
+    padding-top: 10px;
+}
+
+.titre {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.title {
+    color: #fff;
+    font-weight: 20;
+    font-size: 1rem;
+}
+
+.contactInfo h3 {
+    position: relative;
+    margin: 0px 0;
+    cursor: pointer;
+}
+
+/*Le style droit du cv*/
+.container .right_Side {
+    position: relative;
+    background: #fff;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.DEV {
+    color: blue;
+}
+
+.java {
+    height: 10px;
+    width: 10px;
+    background: blue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.jav {
+    height: 10px;
+    width: 10px;
+    background: rgba(179, 179, 199, 0.589);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.tiret {
+    width: 15%;
+    height: 5px;
+    background: blue;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+    background-color: blue;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: -200px;
+}
+
+/* La responsivite */
+
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    body {
+        background: lightblue;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 0 0 0;
+        background: #fff;
+        margin: 0;
+
+    }
+
+    .titre {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    .title{
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 3;
+        font-style: normal;
+    }
+    h2 
+    {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    p {
+        font-size: 1.2rem;
+       font-style: normal;
+    }
+    li {
+       
+        font-size: 1.4rem;
+        font-style: normal;
+    }
+    .left_Side{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background: lightblue;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 0 0 0;
+        background: #fff;
+        margin: 0;
+
+    }
+
+    .titre {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    .title{
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 3;
+        font-style: normal;
+    }
+    h2 
+    {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    p {
+        font-size: 1.2rem;
+       font-style: normal;
+    }
+    li {
+       
+        font-size: 1.4rem;
+        font-style: normal;
+    }
+    .left_Side{
+        width: 100%;
+    }
+}
+
