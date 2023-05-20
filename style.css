@@ -7,7 +7,7 @@
 }
 
 body {
-    background: lightblue;
+    background: rgb(168, 156, 16);
     display: flex;
     justify-content: center;
     align-items: center;
